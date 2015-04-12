@@ -6,16 +6,18 @@
 //  Copyright (c) 2015年 wxiang1991. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ChecklistViewController.h"
 #import "CheckListItem.h"
 #import "ItemDetailViewController.h"
-@interface ViewController (){
+#import "Checklist.h"
+
+@interface ChecklistViewController (){
     
 }
 
 @end
 
-@implementation ViewController{
+@implementation ChecklistViewController{
     NSMutableArray *_items;
 }
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -40,7 +42,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"文件目录%@",[self dataFilePath]);
+    self.title=self.checklist.name;
+    
 }
 -(NSString *)doucmentsDirectoy{
     NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
