@@ -13,9 +13,9 @@
 @protocol ListDetailViewControllerDelegate <NSObject>
 -(void)listDetailViewControllerDidCancel:(ListDetailViewController *)controller;
 -(void)listDetailViewController:(ListDetailViewController *)controller
-            didFinishAddingItem:(Checklist *)checklist;
+       didFinishAddingChecklist:(Checklist *)checklist;
 -(void)listDetailViewController:(ListDetailViewController *) controller
-           didFinishEditingItem:(Checklist *)checklist;
+           didFinishEditingChecklist:(Checklist *)checklist;
 @end
 
 @interface ListDetailViewController : UITableViewController

@@ -37,10 +37,10 @@
     if (self.checklistToEdit==nil) {
         Checklist *checklist=[[Checklist alloc]init];
         checklist.name=self.textField.text;
-        [self.delegate listDetailViewController:self didFinishAddingItem:checklist];
+        [self.delegate listDetailViewController:self didFinishAddingChecklist:checklist];
     }else{
         self.checklistToEdit.name=self.textField.text;
-        [self.delegate listDetailViewController:self didFinishEditingItem:self.checklistToEdit];
+        [self.delegate listDetailViewController:self didFinishEditingChecklist:self.checklistToEdit];
         
     }
 }
