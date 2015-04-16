@@ -27,7 +27,6 @@
 
 }
 
-#pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_icons count];
 }
@@ -39,6 +38,7 @@
     cell.imageView.image=[UIImage imageNamed:icon];
     return cell;
 }
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *iconName=_icons[indexPath.row];
     [self.delegate iconPick:self didPickIcon:iconName];

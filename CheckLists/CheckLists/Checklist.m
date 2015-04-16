@@ -10,6 +10,7 @@
 #import "CheckListItem.h"
 
 @implementation Checklist
+
 -(instancetype)init{
     self=[super init];
     if (self) {
@@ -18,6 +19,7 @@
     }
     return self;
 }
+
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super init];
@@ -33,6 +35,7 @@
     [coder encodeObject:self.items forKey:@"Items"];
     [coder encodeObject:self.iconName forKey:@"IconName"];
 }
+
 -(int)countUncheckedItems{
     int count=0;
     for(CheckListItem *item in self.items){
