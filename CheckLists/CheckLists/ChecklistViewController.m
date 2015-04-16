@@ -56,7 +56,7 @@
     [self configureTextForCell:cell withCheckListItem:item];
     return cell;
 }
-//运行应用，然后触碰某一行，你会看到该行的背景快速变灰，然后再次恢复之前的状态
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell=[tableView cellForRowAtIndexPath:indexPath];
     CheckListItem *item=self.checklist.items[indexPath.row];
@@ -89,6 +89,7 @@
 -(void)ItemDetailViewControllerDidCancel:(id)controller{
       [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"AddItem"]) {
         UINavigationController *navigationController = segue.destinationViewController;
@@ -103,7 +104,5 @@
         
     }
 }
-
-
 @end
  

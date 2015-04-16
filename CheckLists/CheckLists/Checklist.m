@@ -32,7 +32,6 @@
     [coder encodeObject:self.name forKey:@"Name"];
     [coder encodeObject:self.items forKey:@"Items"];
     [coder encodeObject:self.iconName forKey:@"IconName"];
-
 }
 -(int)countUncheckedItems{
     int count=0;
