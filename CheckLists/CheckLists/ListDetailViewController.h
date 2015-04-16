@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IconPickerViewController.h"
+
 @class ListDetailViewController;
 @class Checklist;
 
@@ -18,7 +20,9 @@
            didFinishEditingChecklist:(Checklist *)checklist;
 @end
 
-@interface ListDetailViewController : UITableViewController
+
+@interface ListDetailViewController : UITableViewController<UITextFieldDelegate,IconPickViewControllerDelegate>
+
 @property(nonatomic,weak)IBOutlet UITextField *textField;
 @property(nonatomic,weak)IBOutlet UIBarButtonItem *doneBarButton;
 @property(nonatomic,weak)id<ListDetailViewControllerDelegate> delegate;
@@ -26,5 +30,6 @@
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)done:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
 @end

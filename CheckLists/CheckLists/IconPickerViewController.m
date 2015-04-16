@@ -39,7 +39,9 @@
     cell.imageView.image=[UIImage imageNamed:icon];
     return cell;
 }
-
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *iconName=_icons[indexPath.row];
+    [self.delegate iconPick:self didPickIcon:iconName];
+}
 
 @end
