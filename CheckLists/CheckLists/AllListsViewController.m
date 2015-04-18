@@ -45,12 +45,6 @@
         ListDetailViewController *controller=(ListDetailViewController *)navigationController.topViewController;
         controller.delegate=self;
         controller.checklistToEdit=nil;
-    }else if ([segue.identifier isEqualToString:@"EditChecklist"]){
-        UINavigationController *navigationController=segue.destinationViewController;
-        ListDetailViewController *controller=(ListDetailViewController *)navigationController.topViewController;
-        controller.delegate=self;
-        NSIndexPath *indexPath=[self.tableView indexPathForCell:sender];
-        controller.checklistToEdit=self.dataModel.lists[indexPath.row];
     }
 }
 

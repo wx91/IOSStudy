@@ -166,9 +166,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r19-MP-3Y1" id="HjH-z2-x22">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="2PO-xf-Lqi" kind="modal" identifier="EditChecklist" id="1yb-e1-zkM"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -257,7 +254,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUQ-3C-Igt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="314"/>
+            <point key="canvasLocation" x="-558" y="309"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vev-G3-N1b">
@@ -393,7 +390,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PIs-MY-m4b"/>
         <segue reference="7IV-kQ-q7V"/>
     </inferredMetricsTieBreakers>
 </document>

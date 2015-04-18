@@ -21,4 +21,6 @@
 //选项切换,
 -(void)toggleChecked;
 
+-(void)scheduleNotification;
+
 @end

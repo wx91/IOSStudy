@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		50744D081ACAD50C00325859 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50744D071ACAD50C00325859 /* ChecklistItem.m */; };
 		50744D0C1ACAEE9200325859 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50744D0B1ACAEE9200325859 /* ItemDetailViewController.m */; };
-		50826E7C1ADA426300D14A0F /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50826E7B1ADA426300D14A0F /* AllListsViewController.m */; };
 		50826E7F1ADA457100D14A0F /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = 50826E7E1ADA457100D14A0F /* Checklist.m */; };
 		50826E821ADA756000D14A0F /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50826E811ADA756000D14A0F /* ListDetailViewController.m */; };
 		5096B7B91AC8489100DD5C19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5096B7B81AC8489100DD5C19 /* main.m */; };
@@ -253,7 +252,6 @@
 				5096B7BF1AC8489100DD5C19 /* ChecklistViewController.m in Sources */,
 				5096B7BC1AC8489100DD5C19 /* AppDelegate.m in Sources */,
 				50CA335A1ADBFFE700EBB13B /* DataModel.m in Sources */,
-				50826E7C1ADA426300D14A0F /* AllListsViewController.m in Sources */,
 				5096B7B91AC8489100DD5C19 /* main.m in Sources */,
 				50744D0C1ACAEE9200325859 /* ItemDetailViewController.m in Sources */,
 				50826E821ADA756000D14A0F /* ListDetailViewController.m in Sources */,
