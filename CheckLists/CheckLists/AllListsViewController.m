@@ -11,21 +11,13 @@
 #import "ChecklistViewController.h"
 #import "DataModel.h"
 
-@interface AllListsViewController (){
-    
-}
-
-@end
-
 @implementation AllListsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 -(void)viewDidAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.delegate=self;
@@ -35,17 +27,44 @@
         [self performSegueWithIdentifier:@"ShowChecklist" sender:checklist];
     }
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.tableView reloadData];
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+#pragma mark 设置sugue的跳转流程
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"ShowChecklist"]) {
+        ChecklistViewController *controller=segue.destinationViewController;
+        controller.checklist=sender;
+    }else if ([segue.identifier isEqualToString:@"AddChecklist"]){
+        UINavigationController *navigationController=segue.destinationViewController;
+        ListDetailViewController *controller=(ListDetailViewController *)navigationController.topViewController;
+        controller.delegate=self;
+        controller.checklistToEdit=nil;
+    }else if ([segue.identifier isEqualToString:@"EditChecklist"]){
+        UINavigationController *navigationController=segue.destinationViewController;
+        ListDetailViewController *controller=(ListDetailViewController *)navigationController.topViewController;
+        controller.delegate=self;
+        NSIndexPath *indexPath=[self.tableView indexPathForCell:sender];
+        controller.checklistToEdit=self.dataModel.lists[indexPath.row];
+    }
+}
 
+-(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if(viewController==self){
+        [self.dataModel setIndexOfSelectedChecklist:-1];
+    }
+}
+#pragma mark 设置tableview的数据源
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataModel.lists count];
 }
 
-
+#pragma mark实现tableview自带的设置表格cell的方法 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier=@"Cell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -66,47 +85,36 @@
     cell.imageView.image=[UIImage imageNamed:checklist.iconName];
     return  cell;
 }
--(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    if(viewController==self){
-        [self.dataModel setIndexOfSelectedChecklist:-1];
-    }
-}
+
+#pragma mark实现tableview点击选中后的方法
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.dataModel setIndexOfSelectedChecklist:indexPath.row];
     Checklist *checklist=self.dataModel.lists [indexPath.row];
     [self performSegueWithIdentifier:@"ShowChecklist" sender:checklist];
 }
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"ShowChecklist"]) {
-        ChecklistViewController *controller=segue.destinationViewController;
-        controller.checklist=sender;
-    }else if ([segue.identifier isEqualToString:@"AddChecklist"]){
-        UINavigationController *navigationController=segue.destinationViewController;
-        ListDetailViewController *controller=(ListDetailViewController *)navigationController.topViewController;
-        controller.delegate=self;
-        controller.checklistToEdit=nil;
-    }
+
+#pragma mark实现tableview自带的删除方法
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.dataModel.lists  removeObjectAtIndex:indexPath.row];
+    NSArray *indexPaths=@[indexPath];
+    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+#pragma mark实现ListDetailViewControllerDelegate的listDetailViewControllerDidCancel方法
 -(void)listDetailViewControllerDidCancel:(ListDetailViewController *)controller{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+#pragma mark实现ListDetailViewControllerDelegate的didFinishAddingChecklist方法
 -(void)listDetailViewController:(ListDetailViewController *)controller didFinishAddingChecklist:(Checklist *)checklist{
     [self.dataModel.lists addObject:checklist];
     [self.dataModel sortChecklists];
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+#pragma mark实现ListDetailViewControllerDelegate的didFinishEditingChecklist方法
 -(void)listDetailViewController:(ListDetailViewController *)controller didFinishEditingChecklist:(Checklist *)checklist{
     [self.dataModel sortChecklists];
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.dataModel.lists  removeObjectAtIndex:indexPath.row];
-    NSArray *indexPaths=@[indexPath];
-    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
 
 @end

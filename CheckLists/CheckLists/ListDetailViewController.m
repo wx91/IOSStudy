@@ -10,10 +10,6 @@
 #import "Checklist.h"
 #import "IconPickerViewController.h"
 
-@interface ListDetailViewController ()
-
-@end
-
 @implementation ListDetailViewController{
     NSString *_iconName;
 }
@@ -47,10 +43,36 @@
     }
     return self;
 }
+#pragma mark segue链接的统一配置中心
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"PickIcon"]) {
+        IconPickerViewController *controller=segue.destinationViewController;
+        controller.delegate=self;
+    }
+}
 
+#pragma mark 点击选择中触发事件
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row==1) {
+        return indexPath;
+    }else{
+        return nil;
+    }
+}
+
+#pragma mark 增加对textField填写的内容进行验证
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    NSString *newText=[textField.text stringByReplacingCharactersInRange:range withString:string];
+    self.doneBarButton.enabled=([newText length]>0);
+    return YES;
+}
+
+#pragma mark 点击取消按钮触发事件
 -(IBAction)cancel:(id)sender{
     [self.delegate listDetailViewControllerDidCancel:self];
 }
+
+#pragma mark 点击done按钮触发事件
 -(IBAction)done:(id)sender{
     if (self.checklistToEdit==nil) {
         Checklist *checklist=[[Checklist alloc]init];
@@ -63,26 +85,7 @@
         [self.delegate listDetailViewController:self didFinishEditingChecklist:self.checklistToEdit];
     }
 }
-
--(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section==1) {
-        return indexPath;
-    }else{
-        return nil;
-    }
-}
-
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    NSString *newText=[textField.text stringByReplacingCharactersInRange:range withString:string];
-    self.doneBarButton.enabled=([newText length]>0);
-    return YES;
-}
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"PickIcon"]) {
-        IconPickerViewController *controller=segue.destinationViewController;
-        controller.delegate=self;
-    }
-}
+#pragma mark 实现IconPickViewControllerDelegate为为委托的didPickIcon方法
 -(void)iconPick:(IconPickerViewController *)picker didPickIcon:(NSString *)iconName{
     _iconName=iconName;
     self.iconImageView.image=[UIImage imageNamed:_iconName];

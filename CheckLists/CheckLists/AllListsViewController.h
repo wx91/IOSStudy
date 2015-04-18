@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataModel.h"
+#import "Checklist.h"
 #import "ListDetailViewController.h"
-@class DataModel;
+
 
 
 @interface AllListsViewController : UITableViewController<ListDetailViewControllerDelegate,UINavigationControllerDelegate>

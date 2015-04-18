@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DataModel : NSObject
+
 @property(nonatomic,strong)NSMutableArray *lists;
 
 -(void)saveChecklists;
@@ -18,4 +19,7 @@
 -(void)setIndexOfSelectedChecklist:(NSInteger )index;
 
 -(void)sortChecklists;
+
++(NSInteger)nextChecklistItemId;
+
 @end

@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class IconPickerViewController;
 
 @protocol IconPickViewControllerDelegate <NSObject>
+
 -(void)iconPick:(IconPickerViewController *)picker didPickIcon:(NSString *)iconName;
+
 @end
 
 @interface IconPickerViewController : UITableViewController
+
 @property(nonatomic,weak) id <IconPickViewControllerDelegate>delegate;
 
 @end

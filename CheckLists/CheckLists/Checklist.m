@@ -7,10 +7,16 @@
 //
 #import <Foundation/Foundation.h>
 #import "Checklist.h"
-#import "CheckListItem.h"
+#import "ChecklistItem.h"
 
 @implementation Checklist
-
+/**
+ *  @author wangx, 15-04-18 11:04:55
+ *
+ *  初始化方法
+ *
+ *  @return 返回checklist的对象
+ */
 -(instancetype)init{
     self=[super init];
     if (self) {
@@ -30,22 +36,37 @@
     }
     return self;
 }
+
 - (void)encodeWithCoder:(NSCoder *)coder{
     [coder encodeObject:self.name forKey:@"Name"];
     [coder encodeObject:self.items forKey:@"Items"];
     [coder encodeObject:self.iconName forKey:@"IconName"];
 }
-
+/**
+ *  @author wangx, 15-04-18 11:04:09
+ *
+ *  查询出没有被标记完成的数值
+ *
+ *  @return 返回没有被标记数值
+ */
 -(int)countUncheckedItems{
     int count=0;
-    for(CheckListItem *item in self.items){
+    for(ChecklistItem *item in self.items){
         if (!item.checked) {
             count+=1;
         }
     }
     return count;
 }
-
+/**
+ *  @author wangx, 15-04-18 11:04:14
+ *
+ *  对传入的checklist进行排序
+ *
+ *  @param otherChecklist 对比的othterChecklist
+ *
+ *  @return 返回的时对比
+ */
 -(NSComparisonResult)compareChecklist:(Checklist *)otherChecklist{
     return [self.name localizedStandardCompare:otherChecklist.name];
 }

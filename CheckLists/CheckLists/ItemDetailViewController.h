@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CheckListItem.h"
+#import "ChecklistItem.h"
 
 @class ItemDetailViewController;
 @class ChecklistItem;
@@ -15,9 +15,9 @@
 @protocol ItemDetailViewControllerDelegate <NSObject>
     -(void)ItemDetailViewControllerDidCancel:(ItemDetailViewController *)controller;
     -(void)ItemDetailViewController:(ItemDetailViewController *)controller
-    didFinishAddingItem:(CheckListItem *)item;
+    didFinishAddingItem:(ChecklistItem *)item;
     -(void)ItemDetailViewController:(ItemDetailViewController *) controller
-    didFinishEditingItem:(CheckListItem *)item;
+    didFinishEditingItem:(ChecklistItem *)item;
 
 @end
 
@@ -27,9 +27,15 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
-@property (nonatomic,strong) CheckListItem *itemToEdit;
+@property (weak, nonatomic) IBOutlet UISwitch *switchControl;
+
+@property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
+
+@property (nonatomic,strong) ChecklistItem *itemToEdit;
 
 @property (nonatomic,weak) id<ItemDetailViewControllerDelegate> delegate;
+
+-(void)dateChanged:(UIDatePicker *)datePicker;
 
 - (IBAction)cancel:(id)sender;
 

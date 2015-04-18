@@ -22,8 +22,9 @@
 }
 
 -(void)registerDefaults{
-    NSDictionary *dictinary=@{@"ChecklistIndex":@-1,@"FirstTime":@YES};
+    NSDictionary *dictinary=@{@"ChecklistIndex":@-1,@"FirstTime":@YES,@"ChecklistItemId":@0};
     [[NSUserDefaults standardUserDefaults]registerDefaults:dictinary];
+    
 }
 
 -(void)handleFirstTime{
@@ -52,7 +53,7 @@
 
 #pragma mark 获取应用中沙盒的document目录
 -(NSString *)doucmentsDirectoy{
-    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory,NSUserDomainMask, YES);
     NSString *documentsDirectory=[paths firstObject];
     return  documentsDirectory;
 }
@@ -79,6 +80,13 @@
     }else{
         _lists =[[NSMutableArray alloc]initWithCapacity:20];
     }
+}
++(NSInteger)nextChecklistItemId{
+    NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
+    NSInteger itemId=[userDefaults integerForKey:@"ChecklistItemId"];
+    [userDefaults setInteger:itemId+1 forKey:@"ChecklistItemId"];
+    [userDefaults synchronize];
+    return  itemId;
 }
 
 @end
