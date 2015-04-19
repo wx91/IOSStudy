@@ -21,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     _dataModel =[[DataModel alloc]init];
     UINavigationController *navigationController=(UINavigationController *)self.window.rootViewController;
+    NSArray *ary=navigationController.viewControllers;
     AllListsViewController *controller=navigationController.viewControllers[0];
     controller.dataModel=_dataModel;
     //local notification
@@ -31,7 +32,6 @@
     localNotification.alertBody=@"2015年，马上有钱！";
     localNotification.soundName=UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication]scheduleLocalNotification:localNotification];
-    
     return YES;
 }
 
