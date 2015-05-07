@@ -7,18 +7,18 @@
 //
 
 #import "ViewController.h"
+#import <sqlite3.h>
 #define DBNAME      @"personinfo.sqlite"
 #define NAME        @"name"
 #define AGE         @"age"
 #define ADDRESS     @"address"
-#define TABLENAME   @"pserson"
+#define TABLENAME   @"person"
 static sqlite3 *db;
-
-
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,42 +26,42 @@ static sqlite3 *db;
 }
 -(void) execSql:(NSString *)sql{
     char *err;
-    if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, &err)!=SQLITE_OK ){
+    int result=sqlite3_exec(db, [sql UTF8String], NULL, NULL, &err);
+    if (result!=SQLITE_OK ){
         sqlite3_close(db);
         NSLog(@"数据库操作失败！");
+        
     }
-}
--(NSString *)filePath{
-    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
-    NSString *documents=[paths firstObject];
-    NSString *database_path=[documents stringByAppendingPathComponent:DBNAME];
-    return database_path;
 }
 
 - (IBAction)openDB:(id)sender{
-    int result=sqlite3_open([[self filePath]UTF8String], &db);
-    if (result==SQLITE_OK) {
-        NSLog(@"数据库打开成功！");
-    }else{
-        NSLog(@"数据库打开失败！");
-        sqlite3_close(db);
+    NSString *databasePath=[NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@",DBNAME];
+    NSFileManager *filemanager=[NSFileManager defaultManager];
+    if ([filemanager fileExistsAtPath:databasePath]==NO) {
+        const char *dbpath=[databasePath UTF8String];
+        int result=sqlite3_open(dbpath, &db);
+        if (result==SQLITE_OK) {
+            NSLog(@"打开数据库成功！");
+        }else{
+            NSLog(@"打开数据库失败");
+        }
     }
 }
 
 - (IBAction)createTable:(id)sender{
-    NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS PERSONINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
+    NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS person (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
     NSLog(@"%@",sqlCreateTable);
     [self execSql:sqlCreateTable];
 }
 
 - (IBAction)insertPerson:(id)sender{
     NSString *sql1 = [NSString stringWithFormat:
-                      @"INSERT INTO '%@' ('%@', '%@', '%@') VALUES ('%@', '%@', '%@')",
-                      TABLENAME, NAME, AGE, ADDRESS, @"张三", @"23", @"西城区"];
+                      @"insert into %@ (%@, %@, %@) values ('%@', '%@', '%@' )",
+                      TABLENAME, NAME, AGE, ADDRESS, @"zhangsan", @"23", @"xichengqu" ];
     
     NSString *sql2 = [NSString stringWithFormat:
-                      @"INSERT INTO '%@' ('%@', '%@', '%@') VALUES ('%@', '%@', '%@')",
-                      TABLENAME, NAME, AGE, ADDRESS, @"老六", @"20", @"东城区"];
+                      @"INSERT INTO %@ (%@, %@, %@) VALUES ('%@', '%@', '%@')",
+                      TABLENAME, NAME, AGE, ADDRESS, @"lisi", @"20", @"dongchengqu"];
     NSLog(@"%@",sql1);
     NSLog(@"%@",sql2);
     [self execSql:sql1];
@@ -75,20 +75,21 @@ static sqlite3 *db;
         while (sqlite3_step(stmt)==SQLITE_ROW) {
             char *name=(char *)sqlite3_column_text(stmt, 1);
             NSString *nsName=[[NSString alloc]initWithUTF8String:name];
-            int age=sqlite3_column_int(stmt, 2);            char *address=(char *)sqlite3_column_text(stmt, 3);
+            int age=sqlite3_column_int(stmt, 2);
+            char *address=(char *)sqlite3_column_text(stmt, 3);
             NSString *nsAddress=[[NSString alloc]initWithUTF8String:address];
             NSLog(@"name:%@ age:%d address:%@",nsName,age,nsAddress);
         }
     }
 }
 - (IBAction)updatePerson:(id)sender{
-    NSString *sql1 = [NSString stringWithFormat:@"update person set '%@' = '%@' ",AGE,@"45"];
+    NSString *sql1 = [NSString stringWithFormat:@"update person set %@ = %@ ",AGE,@"45"];
     NSLog(@"%@",sql1);
     [self execSql:sql1];
     
 }
 - (IBAction)deletePerson:(id)sender{
-    NSString *sql1 = [NSString stringWithFormat:@"delete from %@ where %@=%@",TABLENAME,AGE,@45];
+    NSString *sql1 = [NSString stringWithFormat:@"delete from %@ where %@=%@",TABLENAME,AGE,@"45"];
     NSLog(@"%@",sql1);
     [self execSql:sql1];
 }
