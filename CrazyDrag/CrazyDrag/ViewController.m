@@ -52,22 +52,22 @@
     
     [self startNewGame];
     [self updateLabels];
-    [self playBackgroundMusic];
+    //[self playBackgroundMusic];
 }
 
--(void)playBackgroundMusic{
-    NSString *musicPath=[[NSBundle mainBundle]pathForResource:@"no" ofType:@"mp3"];
-    NSURL *url=[NSURL fileURLWithPath:musicPath];
-    NSError *error;
-    audioPlayer=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:&error];
-    audioPlayer.numberOfLoops=-1;
-    if (audioPlayer==nil) {
-        NSString *errorInfo=[NSString stringWithFormat:[error description]];
-        NSLog(@"the error is :%@",errorInfo);
-    }else{
-        [audioPlayer play];
-    }
-}
+//-(void)playBackgroundMusic{
+//    NSString *musicPath=[[NSBundle mainBundle]pathForResource:@"no" ofType:@"mp3"];
+//    NSURL *url=[NSURL fileURLWithPath:musicPath];
+//    NSError *error;
+//    audioPlayer=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:&error];
+//    audioPlayer.numberOfLoops=-1;
+//    if (audioPlayer==nil) {
+//        NSString *errorInfo=[NSString stringWithFormat:[error description]];
+//        NSLog(@"the error is :%@",errorInfo);
+//    }else{
+//        [audioPlayer play];
+//    }
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

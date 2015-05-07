@@ -24,7 +24,6 @@
 		504AEB5C1AC5B0B3003832AA /* SliderTrackRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 504AEB531AC5B0B3003832AA /* SliderTrackRight.png */; };
 		504AEB5D1AC5B0B3003832AA /* StartOverButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 504AEB541AC5B0B3003832AA /* StartOverButton.png */; };
 		504AEB5E1AC5B0B3003832AA /* StartOverIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 504AEB551AC5B0B3003832AA /* StartOverIcon.png */; };
-		504AF6141AC5B808003832AA /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 504AF6131AC5B808003832AA /* no.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		504AEB531AC5B0B3003832AA /* SliderTrackRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderTrackRight.png; sourceTree = "<group>"; };
 		504AEB541AC5B0B3003832AA /* StartOverButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartOverButton.png; sourceTree = "<group>"; };
 		504AEB551AC5B0B3003832AA /* StartOverIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartOverIcon.png; sourceTree = "<group>"; };
-		504AF6131AC5B808003832AA /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = no.mp3; path = "../../../../../../Desktop/kidscoding-master/iOS Learning 1/ios7 code/cha15/resources/music/no.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 		504AEB201AC56F47003832AA /* CrazyDrag */ = {
 			isa = PBXGroup;
 			children = (
-				504AF6131AC5B808003832AA /* no.mp3 */,
 				504AEB471AC5A40A003832AA /* AboutViewController.h */,
 				504AEB251AC56F47003832AA /* AppDelegate.h */,
 				504AEB281AC56F47003832AA /* ViewController.h */,
@@ -242,7 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504AF6141AC5B808003832AA /* no.mp3 in Resources */,
 				504AEB581AC5B0B3003832AA /* Button-Normal.png in Resources */,
 				504AEB2D1AC56F47003832AA /* Main.storyboard in Resources */,
 				504AEB5A1AC5B0B3003832AA /* SliderThumb-Normal.png in Resources */,
@@ -460,6 +456,7 @@
 				504AEB431AC56F47003832AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		504AEB441AC56F47003832AA /* Build configuration list for PBXNativeTarget "CrazyDragTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +465,7 @@
 				504AEB461AC56F47003832AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
