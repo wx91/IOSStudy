@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)openDB:(id)sender;
 
+- (IBAction)createPS:(id)sender;
+- (IBAction)savePerson:(id)sender;
+- (IBAction)queryPS:(id)sender;
+- (IBAction)updatePS:(id)sender;
+- (IBAction)deletePS:(id)sender;
 
 @end
 
