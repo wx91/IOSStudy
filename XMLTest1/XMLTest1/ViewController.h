@@ -16,8 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *showTextView;
 
--(void)start;
-
 - (IBAction)loadXML:(id)sender;
 
 - (IBAction)parseXML:(id)sender;
