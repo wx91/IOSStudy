@@ -10,11 +10,11 @@
 @class User;
 
 @interface Status : NSObject
-
+//微博内容
 @property(copy,nonatomic)NSString *text;
-
-@property(copy,nonatomic)User *user;
-
+//微博作者 strong和copy的区别问题
+@property(strong,nonatomic)User *user;
+//转发微博
 @property(strong,nonatomic) Status *retweetedStatus;
 
 

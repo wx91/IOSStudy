@@ -9,7 +9,8 @@
 #import "User.h"
 
 @implementation User:NSObject
-
-
+//+(NSArray *)allowedPropertyNames{
+//    return @[@"name",@"icom"];
+//}
 
 @end
