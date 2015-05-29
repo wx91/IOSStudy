@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "500EA48B1B0A290B0086484F"
-               BuildableName = "XMLTest2.app"
-               BlueprintName = "XMLTest2"
-               ReferencedContainer = "container:XMLTest2.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "500EA4A41B0A290B0086484F"
-               BuildableName = "XMLTest2Tests.xctest"
-               BlueprintName = "XMLTest2Tests"
-               ReferencedContainer = "container:XMLTest2.xcodeproj">
+               BlueprintIdentifier = "50CE625F1B188DC100C2634A"
+               BuildableName = "swiftlec1"
+               BlueprintName = "swiftlec1"
+               ReferencedContainer = "container:swiftlec1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "500EA4A41B0A290B0086484F"
-               BuildableName = "XMLTest2Tests.xctest"
-               BlueprintName = "XMLTest2Tests"
-               ReferencedContainer = "container:XMLTest2.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "500EA48B1B0A290B0086484F"
-            BuildableName = "XMLTest2.app"
-            BlueprintName = "XMLTest2"
-            ReferencedContainer = "container:XMLTest2.xcodeproj">
+            BlueprintIdentifier = "50CE625F1B188DC100C2634A"
+            BuildableName = "swiftlec1"
+            BlueprintName = "swiftlec1"
+            ReferencedContainer = "container:swiftlec1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "500EA48B1B0A290B0086484F"
-            BuildableName = "XMLTest2.app"
-            BlueprintName = "XMLTest2"
-            ReferencedContainer = "container:XMLTest2.xcodeproj">
+            BlueprintIdentifier = "50CE625F1B188DC100C2634A"
+            BuildableName = "swiftlec1"
+            BlueprintName = "swiftlec1"
+            ReferencedContainer = "container:swiftlec1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "500EA48B1B0A290B0086484F"
-            BuildableName = "XMLTest2.app"
-            BlueprintName = "XMLTest2"
-            ReferencedContainer = "container:XMLTest2.xcodeproj">
+            BlueprintIdentifier = "50CE625F1B188DC100C2634A"
+            BuildableName = "swiftlec1"
+            BlueprintName = "swiftlec1"
+            ReferencedContainer = "container:swiftlec1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>XMLTest2.xcscheme</key>
+		<key>swiftlec1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>500EA48B1B0A290B0086484F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>500EA4A41B0A290B0086484F</key>
+		<key>50CE625F1B188DC100C2634A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

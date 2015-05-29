@@ -6,13 +6,11 @@
 //  Copyright (c) 2015年 wxiang1991. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "main.h"
-#import "NotesXMLParser.h"
-int main(int argc, const char * argv[]) {
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
+int main(int argc, char * argv[]) {
     @autoreleasepool {
-        NotesXMLParser *parser=[[NotesXMLParser alloc]init];
-        [parser start];
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
-    return 0;
 }
