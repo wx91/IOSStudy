@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50871B9C1B19469500B5AD0F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50871B9B1B19469500B5AD0F /* AboutViewController.swift */; };
+		50871B9E1B194B3900B5AD0F /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50871B9D1B194B3900B5AD0F /* Empty.xib */; };
 		50CE627B1B18B2A000C2634A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE627A1B18B2A000C2634A /* AppDelegate.swift */; };
 		50CE627D1B18B2A000C2634A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE627C1B18B2A000C2634A /* ViewController.swift */; };
 		50CE62801B18B2A000C2634A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50CE627E1B18B2A000C2634A /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50871B9B1B19469500B5AD0F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		50871B9D1B194B3900B5AD0F /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 		50CE62751B18B2A000C2634A /* CragDrag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CragDrag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CE62791B18B2A000C2634A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50CE627A1B18B2A000C2634A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +83,12 @@
 			children = (
 				50CE627A1B18B2A000C2634A /* AppDelegate.swift */,
 				50CE627C1B18B2A000C2634A /* ViewController.swift */,
+				50871B9B1B19469500B5AD0F /* AboutViewController.swift */,
 				50CE627E1B18B2A000C2634A /* Main.storyboard */,
 				50CE62811B18B2A000C2634A /* Images.xcassets */,
 				50CE62831B18B2A000C2634A /* LaunchScreen.xib */,
 				50CE62781B18B2A000C2634A /* Supporting Files */,
+				50871B9D1B194B3900B5AD0F /* Empty.xib */,
 			);
 			path = CragDrag;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50CE62801B18B2A000C2634A /* Main.storyboard in Resources */,
+				50871B9E1B194B3900B5AD0F /* Empty.xib in Resources */,
 				50CE62851B18B2A000C2634A /* LaunchScreen.xib in Resources */,
 				50CE62821B18B2A000C2634A /* Images.xcassets in Resources */,
 			);
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50CE627D1B18B2A000C2634A /* ViewController.swift in Sources */,
+				50871B9C1B19469500B5AD0F /* AboutViewController.swift in Sources */,
 				50CE627B1B18B2A000C2634A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				50CE62961B18B2A000C2634A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50CE62971B18B2A000C2634A /* Build configuration list for PBXNativeTarget "CragDragTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				50CE62991B18B2A000C2634A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
