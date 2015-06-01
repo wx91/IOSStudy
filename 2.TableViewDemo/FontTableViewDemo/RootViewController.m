@@ -26,7 +26,7 @@
     self.listArray=[UIFont familyNames];
     
     _tableView =[[UITableView alloc]initWithFrame:view.bounds style:UITableViewStylePlain];
-    //_tableView.dataSource=self;//设置数据源，并实现数据源需要实现的方法
+    _tableView.dataSource=self;//设置数据源，并实现数据源需要实现的方法
     //设置表视图cell的高度，高度是统一的
     _tableView.rowHeight=70;
     //设置表的背景图片
@@ -71,7 +71,7 @@
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     NSString *fontName=[self.listArray objectAtIndex:indexPath.row];
-    
+    NSLog(@"indexPath:%@",indexPath);
     cell.textLabel.text=fontName;
     cell.textLabel.font=[UIFont fontWithName:fontName size:14];
     return cell;
