@@ -69,6 +69,7 @@
 //用户选择某一行的时候
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DetailViewController *detailVC=[[DetailViewController alloc]init];
+    detailVC.isPlan=indexPath.row?NO:YES;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 

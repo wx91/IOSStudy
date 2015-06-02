@@ -13,5 +13,6 @@
 UITableView *_tableView;
 NSMutableArray  *_fontsArray;
 }
+@property(nonatomic,assign) BOOL isPlan;
 
 @end
