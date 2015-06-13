@@ -11,6 +11,7 @@
 		5030ED951B2B05C6001E83DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030ED941B2B05C6001E83DF /* AppDelegate.m */; };
 		5030ED9D1B2B05C6001E83DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5030ED9C1B2B05C6001E83DF /* Images.xcassets */; };
 		5030EDAC1B2B05C6001E83DF /* __UIViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030EDAB1B2B05C6001E83DF /* __UIViewDemoTests.m */; };
+		50F752921B2C2CFA001693E9 /* SubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F752911B2C2CFA001693E9 /* SubView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 		5030EDA51B2B05C6001E83DF /* 2.UIViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2.UIViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5030EDAA1B2B05C6001E83DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5030EDAB1B2B05C6001E83DF /* __UIViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UIViewDemoTests.m; sourceTree = "<group>"; };
+		50F752901B2C2CFA001693E9 /* SubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubView.h; sourceTree = "<group>"; };
+		50F752911B2C2CFA001693E9 /* SubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 			children = (
 				5030ED931B2B05C6001E83DF /* AppDelegate.h */,
 				5030ED941B2B05C6001E83DF /* AppDelegate.m */,
+				50F752901B2C2CFA001693E9 /* SubView.h */,
+				50F752911B2C2CFA001693E9 /* SubView.m */,
 				5030ED9C1B2B05C6001E83DF /* Images.xcassets */,
 				5030ED8F1B2B05C6001E83DF /* Supporting Files */,
 			);
@@ -208,6 +213,7 @@
 			files = (
 				5030ED951B2B05C6001E83DF /* AppDelegate.m in Sources */,
 				5030ED921B2B05C6001E83DF /* main.m in Sources */,
+				50F752921B2C2CFA001693E9 /* SubView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +389,7 @@
 				5030EDB11B2B05C6001E83DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5030EDB21B2B05C6001E83DF /* Build configuration list for PBXNativeTarget "2.UIViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +398,7 @@
 				5030EDB41B2B05C6001E83DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SubView.h"
 @interface AppDelegate ()
 
 @end
@@ -20,35 +20,42 @@
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+    /*
     view1=[[UIView alloc]initWithFrame:CGRectMake(60, 100, 200, 100)];
     view1.backgroundColor=[UIColor redColor];
     view1.tag=1;
     [self.window addSubview:view1];
     
-    UIView *view2=[[UIView alloc]initWithFrame:CGRectMake(60, 150, 200, 100)];
+    UIView *view2=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     view2.backgroundColor=[UIColor yellowColor];
     view2.tag=2;
-    [self.window  addSubview:view2];
+    [view1 addSubview:view2];
     
-    UIView *view3=[[UIView alloc]initWithFrame:CGRectMake(60, 200, 200, 100)];
+    UIView *view3=[[UIView alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
     view3.backgroundColor=[UIColor blueColor];
     view3.tag=3;
-    [self.window addSubview:view3];
+    [view2 addSubview:view3];
+    */
     
     /*
     NSLog(@"view1 superview: %@",view1.superview);
     NSLog(@"view2 superview: %@",view2.superview);
     NSLog(@"self.window subviews:%@",self.window.subviews);
     NSLog(@"view1 subviews:%@",view1.subviews);
+         NSLog(@"subview array:%@",self.window.subviews);
     */
+    
+    SubView *subview=[[SubView alloc]initWithFrame:CGRectMake(60, 100, 200, 200)];
+    subview.backgroundColor=[UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
+    subview.tag=101;
+    [self.window addSubview:subview];
     
     UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame=CGRectMake(90, 400, 140, 35);
     [button setTitle:@"change" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(changeView) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:button];
-    NSLog(@"subview array:%@",self.window.subviews);
+
     
     return YES;
 }
@@ -57,8 +64,14 @@
     /*
     [self.window bringSubviewToFront:view1];
      */
-    UIView *view=[ self.window viewWithTag:2];
+    /*hidden和alpha的属性设置会连带影响子视图。
+    UIView *view=[ self.window viewWithTag:3];
+    view.backgroundColor= [UIColor greenColor];
     NSLog(@"%@",view);
+    */
+    UIView *view=[self.window viewWithTag:101];
+    [view removeFromSuperview];
+    
 }
 
 
