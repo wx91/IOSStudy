@@ -53,7 +53,7 @@
     UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame=CGRectMake(90, 400, 140, 35);
     [button setTitle:@"change" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(changeView) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(translateView) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:button];
 
     
@@ -72,6 +72,18 @@
     UIView *view=[self.window viewWithTag:101];
     [view removeFromSuperview];
     
+}
+-(void)changeViewScale{
+    UIView *view=[self.window viewWithTag:101];
+    view.transform=CGAffineTransformScale(view.transform, 0.8, 0.8);
+}
+-(void)rotateView{
+    UIView *view=[self.window viewWithTag:101];
+    view.transform=CGAffineTransformRotate(view.transform, 0.2);
+}
+-(void)translateView{
+    UIView *view=[self.window viewWithTag:101];
+    view.transform=CGAffineTransformTranslate(view.transform, 50, 50);
 }
 
 
