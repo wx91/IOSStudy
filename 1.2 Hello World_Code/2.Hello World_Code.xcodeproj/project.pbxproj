@@ -11,6 +11,7 @@
 		5030ED311B2ABFF2001E83DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030ED301B2ABFF2001E83DF /* AppDelegate.m */; };
 		5030ED391B2ABFF2001E83DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5030ED381B2ABFF2001E83DF /* Images.xcassets */; };
 		5030ED481B2ABFF2001E83DF /* __Hello_World_CodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030ED471B2ABFF2001E83DF /* __Hello_World_CodeTests.m */; };
+		50F75EEE1B56A4A4005710B4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F75EED1B56A4A4005710B4 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 		5030ED411B2ABFF2001E83DF /* 2.Hello World_CodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2.Hello World_CodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5030ED461B2ABFF2001E83DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5030ED471B2ABFF2001E83DF /* __Hello_World_CodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Hello_World_CodeTests.m; sourceTree = "<group>"; };
+		50F75EEC1B56A4A4005710B4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		50F75EED1B56A4A4005710B4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 			children = (
 				5030ED2F1B2ABFF2001E83DF /* AppDelegate.h */,
 				5030ED301B2ABFF2001E83DF /* AppDelegate.m */,
+				50F75EEC1B56A4A4005710B4 /* RootViewController.h */,
+				50F75EED1B56A4A4005710B4 /* RootViewController.m */,
 				5030ED381B2ABFF2001E83DF /* Images.xcassets */,
 				5030ED2B1B2ABFF2001E83DF /* Supporting Files */,
 			);
@@ -208,6 +213,7 @@
 			files = (
 				5030ED311B2ABFF2001E83DF /* AppDelegate.m in Sources */,
 				5030ED2E1B2ABFF2001E83DF /* main.m in Sources */,
+				50F75EEE1B56A4A4005710B4 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +389,7 @@
 				5030ED4D1B2ABFF2001E83DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5030ED4E1B2ABFF2001E83DF /* Build configuration list for PBXNativeTarget "2.Hello World_CodeTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +398,7 @@
 				5030ED501B2ABFF2001E83DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

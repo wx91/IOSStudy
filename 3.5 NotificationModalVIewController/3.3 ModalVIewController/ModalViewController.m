@@ -8,10 +8,6 @@
 
 #import "ModalViewController.h"
 
-@interface ModalViewController ()
-
-@end
-
 @implementation ModalViewController
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{

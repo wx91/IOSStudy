@@ -12,5 +12,4 @@
     @private
     UITextField *_textField;
 }
-
 @end
