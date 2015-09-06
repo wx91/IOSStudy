@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500622F91B9C05D300A2404E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500622F81B9C05D300A2404E /* main.m */; };
+		500623011B9C05E600A2404E /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 500623001B9C05E600A2404E /* Instrument.m */; };
+		500623041B9C065D00A2404E /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = 500623031B9C065D00A2404E /* Piano.m */; };
+		500623071B9C069700A2404E /* Violin.m in Sources */ = {isa = PBXBuildFile; fileRef = 500623061B9C069700A2404E /* Violin.m */; };
+		5006230A1B9C06DB00A2404E /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 500623091B9C06DB00A2404E /* Actor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		500622F31B9C05D300A2404E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		500622F51B9C05D300A2404E /* 02.06 Instrument */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02.06 Instrument"; sourceTree = BUILT_PRODUCTS_DIR; };
+		500622F81B9C05D300A2404E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		500622FF1B9C05E600A2404E /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		500623001B9C05E600A2404E /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		500623021B9C065D00A2404E /* Piano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piano.h; sourceTree = "<group>"; };
+		500623031B9C065D00A2404E /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
+		500623051B9C069700A2404E /* Violin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Violin.h; sourceTree = "<group>"; };
+		500623061B9C069700A2404E /* Violin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Violin.m; sourceTree = "<group>"; };
+		500623081B9C06DB00A2404E /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		500623091B9C06DB00A2404E /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500622F21B9C05D300A2404E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500622EC1B9C05D300A2404E = {
+			isa = PBXGroup;
+			children = (
+				500622F71B9C05D300A2404E /* 02.06 Instrument */,
+				500622F61B9C05D300A2404E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		500622F61B9C05D300A2404E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				500622F51B9C05D300A2404E /* 02.06 Instrument */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500622F71B9C05D300A2404E /* 02.06 Instrument */ = {
+			isa = PBXGroup;
+			children = (
+				500622F81B9C05D300A2404E /* main.m */,
+				500622FF1B9C05E600A2404E /* Instrument.h */,
+				500623001B9C05E600A2404E /* Instrument.m */,
+				500623021B9C065D00A2404E /* Piano.h */,
+				500623031B9C065D00A2404E /* Piano.m */,
+				500623051B9C069700A2404E /* Violin.h */,
+				500623061B9C069700A2404E /* Violin.m */,
+				500623081B9C06DB00A2404E /* Actor.h */,
+				500623091B9C06DB00A2404E /* Actor.m */,
+			);
+			path = "02.06 Instrument";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500622F41B9C05D300A2404E /* 02.06 Instrument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500622FC1B9C05D300A2404E /* Build configuration list for PBXNativeTarget "02.06 Instrument" */;
+			buildPhases = (
+				500622F11B9C05D300A2404E /* Sources */,
+				500622F21B9C05D300A2404E /* Frameworks */,
+				500622F31B9C05D300A2404E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02.06 Instrument";
+			productName = "02.06 Instrument";
+			productReference = 500622F51B9C05D300A2404E /* 02.06 Instrument */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		500622ED1B9C05D300A2404E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = wangx;
+				TargetAttributes = {
+					500622F41B9C05D300A2404E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 500622F01B9C05D300A2404E /* Build configuration list for PBXProject "02.06 Instrument" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 500622EC1B9C05D300A2404E;
+			productRefGroup = 500622F61B9C05D300A2404E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500622F41B9C05D300A2404E /* 02.06 Instrument */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		500622F11B9C05D300A2404E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500623071B9C069700A2404E /* Violin.m in Sources */,
+				5006230A1B9C06DB00A2404E /* Actor.m in Sources */,
+				500623041B9C065D00A2404E /* Piano.m in Sources */,
+				500623011B9C05E600A2404E /* Instrument.m in Sources */,
+				500622F91B9C05D300A2404E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		500622FA1B9C05D300A2404E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		500622FB1B9C05D300A2404E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		500622FD1B9C05D300A2404E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		500622FE1B9C05D300A2404E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		500622F01B9C05D300A2404E /* Build configuration list for PBXProject "02.06 Instrument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500622FA1B9C05D300A2404E /* Debug */,
+				500622FB1B9C05D300A2404E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500622FC1B9C05D300A2404E /* Build configuration list for PBXNativeTarget "02.06 Instrument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500622FD1B9C05D300A2404E /* Debug */,
+				500622FE1B9C05D300A2404E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 500622ED1B9C05D300A2404E /* Project object */;
+}
