@@ -9,12 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "03.02 NSStringDemo/main.m"
-            timestampString = "463495007.712454"
+            filePath = "03.03 NSArrayDemo/main.m"
+            timestampString = "463500281.454841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>

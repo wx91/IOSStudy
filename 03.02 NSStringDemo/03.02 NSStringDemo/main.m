@@ -31,6 +31,10 @@ int main(int argc, const char * argv[]) {
     NSString *string5=[[NSString alloc]initWithFormat:@"%@的年龄:age=%d",s1,age];
     NSLog(@"%@",string5);
     
+    //调用类方法创建字符串
+    NSString *str1=[NSString stringWithString:@"hello"];
+    NSString *str2=[NSString stringWithFormat:@"hello %@",str1];
+    
     //2.字符串比较
     NSString *string6=@"abcd";
     NSString *string7=@"8888";
@@ -80,6 +84,88 @@ int main(int argc, const char * argv[]) {
     }else if (result2==NSOrderedDescending){
         NSLog(@"string16>string17");
     }
+    //字符串的长度
+    //length:获字符串的长度
+    NSString *string18=@"abcdef";//@"中文" 为2
+    NSInteger len=[string18 length];
+    NSLog(@"len=%ld",len);
+    //转大小写
+    NSString *string19=@"hELlo";
+    //uppercaseString:将字符串中的字母全都转小写
+    NSLog(@"upper:%@",[string19 uppercaseString]);
+    //lowercaseString：转小写
+    NSLog(@"lower:%@",[string19 lowercaseString]);
+    //capitalizedString:首写字母大写
+    NSLog(@"capitalizedString:%@",[string19 capitalizedString]);
+    //将字符串转成基本类型
+    NSString *string20=@"3.14";
+    float f=[string20 floatValue];
+    NSLog(@"floatValue:%f",f);
+    NSString *string21=@"1";
+    BOOL b=[string21 boolValue];//true
+    
+    //字符串的截取
+    NSString *string22=@"abcdef";
+    //substringToIndex:从字符串的开始位置截取到指定位置（不包含指定位置的字符）
+    NSString *substring1=[string22 substringToIndex:3];
+    NSLog(@"substring1=%@",substring1);
+    //substringFromIndex:从指定位置截取到字符串的末尾（包含指定位置的字符）
+    NSString *substring2=[string22 substringFromIndex:1];
+    NSLog(@"substring2=%@",substring2);
+    
+    NSRange range={1,4};//1:指定位置，4：需要截取长度
+//    NSRange range;
+//    range.location=1;range.length=4;
+//     NSRange range=NSMakeRange(1,4);
+    NSString *substring3=[string22 substringWithRange:range];
+    NSLog(@"substring3=%@",substring3);
+    
+    //字符串的追加
+    NSString *string23=@"Android";
+    //在字符串string23后面追加@" iOS",但不是修改string23字符串的内容，是返回一个新的字符串
+    NSString *string24=[string23 stringByAppendingString:@" iOS"];
+    NSString *string25=[string23 stringByAppendingFormat:@" %@ %d",@"iOS",7];
+    NSLog(@"@string24=%@",string24);
+    NSLog(@"@string25=%@",string25);
+    
+    //字符串的查找
+    NSString *string26=@"www.iphonetrain.com/ios.html";
+    NSRange rang=[string26 rangeOfString:@"ios"];
+    //没有查找到
+    if (rang.location!=NSNotFound) {
+        NSLog(@"location:%ld,length:%ld",rang.location,rang.length);
+    }
+    //例如:如何判断邮箱地址是网易的邮箱
+    //NSString *email=@"wxhl@163.com";
+    
+    NSString *string27=@"abcdef";
+    unichar c=[string27 characterAtIndex:2];
+    NSLog(@"c=%c",c);
+   
+    //NSMutableString
+    //错误，此处是创建一个NSString对象，把NSString的指针给予NSMutableString
+//    NSMutableString *ms1=@"zifuchuang";
+    //insertString在原有的字符串基础上插入字符串
+    NSMutableString *ms2=[[NSMutableString alloc]initWithString:@"字符串"];
+    [ms2 insertString:@"可变" atIndex:0];
+    NSLog(@"ms2=%@",ms2);
+    
+    //在原字符串基础上追加字符串
+    [ms2 appendString:@"对象"];
+    NSLog(@"ms2=%@",ms2);
+    //把"符符"删除
+    NSMutableString *ms3=[NSMutableString stringWithFormat:@"字符符符串"];
+    //查找出"符符"的范围，然后根据范围删除指定的字符串
+    NSRange deleteRange=[ms3 rangeOfString:@"符符"];
+    [ms3 deleteCharactersInRange:deleteRange];
+    NSLog(@"ms3=%@",ms3);
+    
+    NSMutableString *ms4=[NSMutableString stringWithString:@"字符串"];
+    //查找出
+    NSRange replaceRange=[ms4 rangeOfString:@"字符"];
+    [ms4 replaceCharactersInRange:replaceRange withString:@"羊肉"];
+    NSLog(@"ms4=%@",ms4);
+    
     
     return 0;
 }
