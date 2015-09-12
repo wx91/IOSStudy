@@ -85,6 +85,21 @@ int main(int argc, const char * argv[]) {
     NSDate *date=[dateFormatter2 dateFromString:str];
     NSLog(@"%@",date);
     
+    //创建一个空的数组
+    NSArray *array=[NSArray array];
+    @try {//有可能产生异常的代码块
+        //数组越界
+        [array objectAtIndex:5];
+    }
+    @catch (NSException *exception) {
+        //如果捕捉到错误，则会执行此处的代码
+        NSLog(@"错误：%@",exception);
+    }
+    @finally {//@finally是可选的
+        //不管有没有捕捉到异常，此处代码始终会执行
+        NSLog(@"@finally");
+    }
+    
     
     return 0;
 }
