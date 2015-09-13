@@ -13,12 +13,15 @@
     NSString *_name;
     Dog *_dog;
 }
+
+-(instancetype)initwithDog:(Dog *)dog;
+
 -(void)setName:(NSString *)name;
-
-
 
 -(void)setDog:(Dog *)dog;
 
 -(Dog *)dog;
+
+-(void)playDog;
 
 @end
