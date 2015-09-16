@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         }
         NSLog(@"-----------------------------------");
         //复制数组，array2是新复制出来的副本对象
-        NSArray *array2=[array1 copy];
+        NSMutableArray *array2=[array1 mutableCopy];
         for (Person *p in array2) {
             NSLog(@"复制之后的引用计数：%ld",p.retainCount);
             NSLog(@"复制之后的指针：%p",p);
