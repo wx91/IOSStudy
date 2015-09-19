@@ -16,6 +16,14 @@ int main(int argc, char * argv[]) {
         NSString *docPath1=[NSString stringWithFormat:@"%@/Documents",homePath];
         NSString *docPath2=[homePath stringByAppendingFormat:@"%@",@"/Documents"];
         NSLog(@"docPath1=%@,docPath2=%@",docPath1,docPath2);
+
+        
+        /*
+         *  NSDocumentDirectory:Documents文件夹
+         *  
+         */
+        NSArray *array=NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+        NSLog(@"%@",array);
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
