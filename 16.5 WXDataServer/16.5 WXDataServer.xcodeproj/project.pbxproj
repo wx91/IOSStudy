@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504CB2211B481CE700FBA811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 504CB2201B481CE700FBA811 /* main.m */; };
+		504CB2241B481CE700FBA811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 504CB2231B481CE700FBA811 /* AppDelegate.m */; };
+		504CB2261B481CE700FBA811 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504CB2251B481CE700FBA811 /* Images.xcassets */; };
+		504CB2291B481CE700FBA811 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504CB2271B481CE700FBA811 /* LaunchScreen.xib */; };
+		504CB2351B481CE800FBA811 /* _6_5_WXDataServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 504CB2341B481CE800FBA811 /* _6_5_WXDataServerTests.m */; };
+		504CB2401B481D4B00FBA811 /* WXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 504CB23F1B481D4B00FBA811 /* WXRequest.m */; };
+		504CB2431B48206200FBA811 /* WXDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 504CB2421B48206200FBA811 /* WXDataService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504CB22F1B481CE700FBA811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504CB2131B481CE700FBA811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504CB21A1B481CE700FBA811;
+			remoteInfo = "16.5 WXDataServer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		504CB21B1B481CE700FBA811 /* 16.5 WXDataServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16.5 WXDataServer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		504CB21F1B481CE700FBA811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504CB2201B481CE700FBA811 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		504CB2221B481CE700FBA811 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		504CB2231B481CE700FBA811 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		504CB2251B481CE700FBA811 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		504CB2281B481CE700FBA811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		504CB22E1B481CE700FBA811 /* 16.5 WXDataServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16.5 WXDataServerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		504CB2331B481CE800FBA811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504CB2341B481CE800FBA811 /* _6_5_WXDataServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _6_5_WXDataServerTests.m; sourceTree = "<group>"; };
+		504CB23E1B481D4B00FBA811 /* WXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRequest.h; sourceTree = "<group>"; };
+		504CB23F1B481D4B00FBA811 /* WXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXRequest.m; sourceTree = "<group>"; };
+		504CB2411B48206200FBA811 /* WXDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDataService.h; sourceTree = "<group>"; };
+		504CB2421B48206200FBA811 /* WXDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDataService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504CB2181B481CE700FBA811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504CB22B1B481CE700FBA811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504CB2121B481CE700FBA811 = {
+			isa = PBXGroup;
+			children = (
+				504CB21D1B481CE700FBA811 /* 16.5 WXDataServer */,
+				504CB2311B481CE700FBA811 /* 16.5 WXDataServerTests */,
+				504CB21C1B481CE700FBA811 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504CB21C1B481CE700FBA811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504CB21B1B481CE700FBA811 /* 16.5 WXDataServer.app */,
+				504CB22E1B481CE700FBA811 /* 16.5 WXDataServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504CB21D1B481CE700FBA811 /* 16.5 WXDataServer */ = {
+			isa = PBXGroup;
+			children = (
+				504CB2221B481CE700FBA811 /* AppDelegate.h */,
+				504CB2231B481CE700FBA811 /* AppDelegate.m */,
+				504CB23E1B481D4B00FBA811 /* WXRequest.h */,
+				504CB23F1B481D4B00FBA811 /* WXRequest.m */,
+				504CB2411B48206200FBA811 /* WXDataService.h */,
+				504CB2421B48206200FBA811 /* WXDataService.m */,
+				504CB2251B481CE700FBA811 /* Images.xcassets */,
+				504CB2271B481CE700FBA811 /* LaunchScreen.xib */,
+				504CB21E1B481CE700FBA811 /* Supporting Files */,
+			);
+			path = "16.5 WXDataServer";
+			sourceTree = "<group>";
+		};
+		504CB21E1B481CE700FBA811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				504CB21F1B481CE700FBA811 /* Info.plist */,
+				504CB2201B481CE700FBA811 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		504CB2311B481CE700FBA811 /* 16.5 WXDataServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				504CB2341B481CE800FBA811 /* _6_5_WXDataServerTests.m */,
+				504CB2321B481CE800FBA811 /* Supporting Files */,
+			);
+			path = "16.5 WXDataServerTests";
+			sourceTree = "<group>";
+		};
+		504CB2321B481CE800FBA811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				504CB2331B481CE800FBA811 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504CB21A1B481CE700FBA811 /* 16.5 WXDataServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504CB2381B481CE800FBA811 /* Build configuration list for PBXNativeTarget "16.5 WXDataServer" */;
+			buildPhases = (
+				504CB2171B481CE700FBA811 /* Sources */,
+				504CB2181B481CE700FBA811 /* Frameworks */,
+				504CB2191B481CE700FBA811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "16.5 WXDataServer";
+			productName = "16.5 WXDataServer";
+			productReference = 504CB21B1B481CE700FBA811 /* 16.5 WXDataServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		504CB22D1B481CE700FBA811 /* 16.5 WXDataServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504CB23B1B481CE800FBA811 /* Build configuration list for PBXNativeTarget "16.5 WXDataServerTests" */;
+			buildPhases = (
+				504CB22A1B481CE700FBA811 /* Sources */,
+				504CB22B1B481CE700FBA811 /* Frameworks */,
+				504CB22C1B481CE700FBA811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504CB2301B481CE700FBA811 /* PBXTargetDependency */,
+			);
+			name = "16.5 WXDataServerTests";
+			productName = "16.5 WXDataServerTests";
+			productReference = 504CB22E1B481CE700FBA811 /* 16.5 WXDataServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504CB2131B481CE700FBA811 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = wxiang1991;
+				TargetAttributes = {
+					504CB21A1B481CE700FBA811 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					504CB22D1B481CE700FBA811 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 504CB21A1B481CE700FBA811;
+					};
+				};
+			};
+			buildConfigurationList = 504CB2161B481CE700FBA811 /* Build configuration list for PBXProject "16.5 WXDataServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504CB2121B481CE700FBA811;
+			productRefGroup = 504CB21C1B481CE700FBA811 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504CB21A1B481CE700FBA811 /* 16.5 WXDataServer */,
+				504CB22D1B481CE700FBA811 /* 16.5 WXDataServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504CB2191B481CE700FBA811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504CB2291B481CE700FBA811 /* LaunchScreen.xib in Resources */,
+				504CB2261B481CE700FBA811 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504CB22C1B481CE700FBA811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504CB2171B481CE700FBA811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504CB2431B48206200FBA811 /* WXDataService.m in Sources */,
+				504CB2241B481CE700FBA811 /* AppDelegate.m in Sources */,
+				504CB2401B481D4B00FBA811 /* WXRequest.m in Sources */,
+				504CB2211B481CE700FBA811 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504CB22A1B481CE700FBA811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504CB2351B481CE800FBA811 /* _6_5_WXDataServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		504CB2301B481CE700FBA811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504CB21A1B481CE700FBA811 /* 16.5 WXDataServer */;
+			targetProxy = 504CB22F1B481CE700FBA811 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		504CB2271B481CE700FBA811 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504CB2281B481CE700FBA811 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		504CB2361B481CE800FBA811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		504CB2371B481CE800FBA811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504CB2391B481CE800FBA811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16.5 WXDataServer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		504CB23A1B481CE800FBA811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16.5 WXDataServer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		504CB23C1B481CE800FBA811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16.5 WXDataServerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16.5 WXDataServer.app/16.5 WXDataServer";
+			};
+			name = Debug;
+		};
+		504CB23D1B481CE800FBA811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16.5 WXDataServerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16.5 WXDataServer.app/16.5 WXDataServer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504CB2161B481CE700FBA811 /* Build configuration list for PBXProject "16.5 WXDataServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504CB2361B481CE800FBA811 /* Debug */,
+				504CB2371B481CE800FBA811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504CB2381B481CE800FBA811 /* Build configuration list for PBXNativeTarget "16.5 WXDataServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504CB2391B481CE800FBA811 /* Debug */,
+				504CB23A1B481CE800FBA811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		504CB23B1B481CE800FBA811 /* Build configuration list for PBXNativeTarget "16.5 WXDataServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504CB23C1B481CE800FBA811 /* Debug */,
+				504CB23D1B481CE800FBA811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504CB2131B481CE700FBA811 /* Project object */;
+}

@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D7601C1B46A146000D0465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D7601B1B46A146000D0465 /* main.m */; };
+		50D7601F1B46A146000D0465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D7601E1B46A146000D0465 /* AppDelegate.m */; };
+		50D760271B46A146000D0465 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D760261B46A146000D0465 /* Images.xcassets */; };
+		50D760361B46A146000D0465 /* _6_3_ThreadTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D760351B46A146000D0465 /* _6_3_ThreadTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50D760301B46A146000D0465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D7600E1B46A146000D0465 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D760151B46A146000D0465;
+			remoteInfo = "16.3 ThreadTimer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50D760161B46A146000D0465 /* 16.3 ThreadTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16.3 ThreadTimer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D7601A1B46A146000D0465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D7601B1B46A146000D0465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50D7601D1B46A146000D0465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50D7601E1B46A146000D0465 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50D760261B46A146000D0465 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50D7602F1B46A146000D0465 /* 16.3 ThreadTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16.3 ThreadTimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D760341B46A146000D0465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D760351B46A146000D0465 /* _6_3_ThreadTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _6_3_ThreadTimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D760131B46A146000D0465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7602C1B46A146000D0465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D7600D1B46A146000D0465 = {
+			isa = PBXGroup;
+			children = (
+				50D760181B46A146000D0465 /* 16.3 ThreadTimer */,
+				50D760321B46A146000D0465 /* 16.3 ThreadTimerTests */,
+				50D760171B46A146000D0465 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50D760171B46A146000D0465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D760161B46A146000D0465 /* 16.3 ThreadTimer.app */,
+				50D7602F1B46A146000D0465 /* 16.3 ThreadTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D760181B46A146000D0465 /* 16.3 ThreadTimer */ = {
+			isa = PBXGroup;
+			children = (
+				50D7601D1B46A146000D0465 /* AppDelegate.h */,
+				50D7601E1B46A146000D0465 /* AppDelegate.m */,
+				50D760261B46A146000D0465 /* Images.xcassets */,
+				50D760191B46A146000D0465 /* Supporting Files */,
+			);
+			path = "16.3 ThreadTimer";
+			sourceTree = "<group>";
+		};
+		50D760191B46A146000D0465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50D7601A1B46A146000D0465 /* Info.plist */,
+				50D7601B1B46A146000D0465 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50D760321B46A146000D0465 /* 16.3 ThreadTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				50D760351B46A146000D0465 /* _6_3_ThreadTimerTests.m */,
+				50D760331B46A146000D0465 /* Supporting Files */,
+			);
+			path = "16.3 ThreadTimerTests";
+			sourceTree = "<group>";
+		};
+		50D760331B46A146000D0465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50D760341B46A146000D0465 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D760151B46A146000D0465 /* 16.3 ThreadTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D760391B46A146000D0465 /* Build configuration list for PBXNativeTarget "16.3 ThreadTimer" */;
+			buildPhases = (
+				50D760121B46A146000D0465 /* Sources */,
+				50D760131B46A146000D0465 /* Frameworks */,
+				50D760141B46A146000D0465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "16.3 ThreadTimer";
+			productName = "16.3 ThreadTimer";
+			productReference = 50D760161B46A146000D0465 /* 16.3 ThreadTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50D7602E1B46A146000D0465 /* 16.3 ThreadTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D7603C1B46A146000D0465 /* Build configuration list for PBXNativeTarget "16.3 ThreadTimerTests" */;
+			buildPhases = (
+				50D7602B1B46A146000D0465 /* Sources */,
+				50D7602C1B46A146000D0465 /* Frameworks */,
+				50D7602D1B46A146000D0465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D760311B46A146000D0465 /* PBXTargetDependency */,
+			);
+			name = "16.3 ThreadTimerTests";
+			productName = "16.3 ThreadTimerTests";
+			productReference = 50D7602F1B46A146000D0465 /* 16.3 ThreadTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D7600E1B46A146000D0465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = wxiang1991;
+				TargetAttributes = {
+					50D760151B46A146000D0465 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					50D7602E1B46A146000D0465 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 50D760151B46A146000D0465;
+					};
+				};
+			};
+			buildConfigurationList = 50D760111B46A146000D0465 /* Build configuration list for PBXProject "16.3 ThreadTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50D7600D1B46A146000D0465;
+			productRefGroup = 50D760171B46A146000D0465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D760151B46A146000D0465 /* 16.3 ThreadTimer */,
+				50D7602E1B46A146000D0465 /* 16.3 ThreadTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D760141B46A146000D0465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D760271B46A146000D0465 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7602D1B46A146000D0465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D760121B46A146000D0465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7601F1B46A146000D0465 /* AppDelegate.m in Sources */,
+				50D7601C1B46A146000D0465 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7602B1B46A146000D0465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D760361B46A146000D0465 /* _6_3_ThreadTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50D760311B46A146000D0465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D760151B46A146000D0465 /* 16.3 ThreadTimer */;
+			targetProxy = 50D760301B46A146000D0465 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50D760371B46A146000D0465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50D760381B46A146000D0465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50D7603A1B46A146000D0465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16.3 ThreadTimer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50D7603B1B46A146000D0465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16.3 ThreadTimer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50D7603D1B46A146000D0465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16.3 ThreadTimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16.3 ThreadTimer.app/16.3 ThreadTimer";
+			};
+			name = Debug;
+		};
+		50D7603E1B46A146000D0465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16.3 ThreadTimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16.3 ThreadTimer.app/16.3 ThreadTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D760111B46A146000D0465 /* Build configuration list for PBXProject "16.3 ThreadTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D760371B46A146000D0465 /* Debug */,
+				50D760381B46A146000D0465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D760391B46A146000D0465 /* Build configuration list for PBXNativeTarget "16.3 ThreadTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7603A1B46A146000D0465 /* Debug */,
+				50D7603B1B46A146000D0465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50D7603C1B46A146000D0465 /* Build configuration list for PBXNativeTarget "16.3 ThreadTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7603D1B46A146000D0465 /* Debug */,
+				50D7603E1B46A146000D0465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50D7600E1B46A146000D0465 /* Project object */;
+}

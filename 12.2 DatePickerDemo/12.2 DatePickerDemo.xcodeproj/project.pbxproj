@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50CE6B9B1B440F8C00EDAAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CE6B9A1B440F8C00EDAAC2 /* main.m */; };
+		50CE6B9E1B440F8C00EDAAC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CE6B9D1B440F8C00EDAAC2 /* AppDelegate.m */; };
+		50CE6BA61B440F8C00EDAAC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CE6BA51B440F8C00EDAAC2 /* Images.xcassets */; };
+		50CE6BB51B440F8C00EDAAC2 /* _2_2_DatePickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CE6BB41B440F8C00EDAAC2 /* _2_2_DatePickerDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50CE6BAF1B440F8C00EDAAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CE6B8D1B440F8C00EDAAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CE6B941B440F8C00EDAAC2;
+			remoteInfo = "12.2 DatePickerDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50CE6B951B440F8C00EDAAC2 /* 12.2 DatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "12.2 DatePickerDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CE6B991B440F8C00EDAAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CE6B9A1B440F8C00EDAAC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50CE6B9C1B440F8C00EDAAC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50CE6B9D1B440F8C00EDAAC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50CE6BA51B440F8C00EDAAC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50CE6BAE1B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "12.2 DatePickerDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CE6BB31B440F8C00EDAAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CE6BB41B440F8C00EDAAC2 /* _2_2_DatePickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _2_2_DatePickerDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50CE6B921B440F8C00EDAAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CE6BAB1B440F8C00EDAAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50CE6B8C1B440F8C00EDAAC2 = {
+			isa = PBXGroup;
+			children = (
+				50CE6B971B440F8C00EDAAC2 /* 12.2 DatePickerDemo */,
+				50CE6BB11B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests */,
+				50CE6B961B440F8C00EDAAC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50CE6B961B440F8C00EDAAC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50CE6B951B440F8C00EDAAC2 /* 12.2 DatePickerDemo.app */,
+				50CE6BAE1B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50CE6B971B440F8C00EDAAC2 /* 12.2 DatePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				50CE6B9C1B440F8C00EDAAC2 /* AppDelegate.h */,
+				50CE6B9D1B440F8C00EDAAC2 /* AppDelegate.m */,
+				50CE6BA51B440F8C00EDAAC2 /* Images.xcassets */,
+				50CE6B981B440F8C00EDAAC2 /* Supporting Files */,
+			);
+			path = "12.2 DatePickerDemo";
+			sourceTree = "<group>";
+		};
+		50CE6B981B440F8C00EDAAC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50CE6B991B440F8C00EDAAC2 /* Info.plist */,
+				50CE6B9A1B440F8C00EDAAC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50CE6BB11B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				50CE6BB41B440F8C00EDAAC2 /* _2_2_DatePickerDemoTests.m */,
+				50CE6BB21B440F8C00EDAAC2 /* Supporting Files */,
+			);
+			path = "12.2 DatePickerDemoTests";
+			sourceTree = "<group>";
+		};
+		50CE6BB21B440F8C00EDAAC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50CE6BB31B440F8C00EDAAC2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50CE6B941B440F8C00EDAAC2 /* 12.2 DatePickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CE6BB81B440F8C00EDAAC2 /* Build configuration list for PBXNativeTarget "12.2 DatePickerDemo" */;
+			buildPhases = (
+				50CE6B911B440F8C00EDAAC2 /* Sources */,
+				50CE6B921B440F8C00EDAAC2 /* Frameworks */,
+				50CE6B931B440F8C00EDAAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "12.2 DatePickerDemo";
+			productName = "12.2 DatePickerDemo";
+			productReference = 50CE6B951B440F8C00EDAAC2 /* 12.2 DatePickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50CE6BAD1B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CE6BBB1B440F8C00EDAAC2 /* Build configuration list for PBXNativeTarget "12.2 DatePickerDemoTests" */;
+			buildPhases = (
+				50CE6BAA1B440F8C00EDAAC2 /* Sources */,
+				50CE6BAB1B440F8C00EDAAC2 /* Frameworks */,
+				50CE6BAC1B440F8C00EDAAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50CE6BB01B440F8C00EDAAC2 /* PBXTargetDependency */,
+			);
+			name = "12.2 DatePickerDemoTests";
+			productName = "12.2 DatePickerDemoTests";
+			productReference = 50CE6BAE1B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50CE6B8D1B440F8C00EDAAC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = wxiang1991;
+				TargetAttributes = {
+					50CE6B941B440F8C00EDAAC2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					50CE6BAD1B440F8C00EDAAC2 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 50CE6B941B440F8C00EDAAC2;
+					};
+				};
+			};
+			buildConfigurationList = 50CE6B901B440F8C00EDAAC2 /* Build configuration list for PBXProject "12.2 DatePickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50CE6B8C1B440F8C00EDAAC2;
+			productRefGroup = 50CE6B961B440F8C00EDAAC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50CE6B941B440F8C00EDAAC2 /* 12.2 DatePickerDemo */,
+				50CE6BAD1B440F8C00EDAAC2 /* 12.2 DatePickerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50CE6B931B440F8C00EDAAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CE6BA61B440F8C00EDAAC2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CE6BAC1B440F8C00EDAAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50CE6B911B440F8C00EDAAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CE6B9E1B440F8C00EDAAC2 /* AppDelegate.m in Sources */,
+				50CE6B9B1B440F8C00EDAAC2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CE6BAA1B440F8C00EDAAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CE6BB51B440F8C00EDAAC2 /* _2_2_DatePickerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50CE6BB01B440F8C00EDAAC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50CE6B941B440F8C00EDAAC2 /* 12.2 DatePickerDemo */;
+			targetProxy = 50CE6BAF1B440F8C00EDAAC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50CE6BB61B440F8C00EDAAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50CE6BB71B440F8C00EDAAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50CE6BB91B440F8C00EDAAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "12.2 DatePickerDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50CE6BBA1B440F8C00EDAAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "12.2 DatePickerDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50CE6BBC1B440F8C00EDAAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "12.2 DatePickerDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/12.2 DatePickerDemo.app/12.2 DatePickerDemo";
+			};
+			name = Debug;
+		};
+		50CE6BBD1B440F8C00EDAAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "12.2 DatePickerDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/12.2 DatePickerDemo.app/12.2 DatePickerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50CE6B901B440F8C00EDAAC2 /* Build configuration list for PBXProject "12.2 DatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CE6BB61B440F8C00EDAAC2 /* Debug */,
+				50CE6BB71B440F8C00EDAAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CE6BB81B440F8C00EDAAC2 /* Build configuration list for PBXNativeTarget "12.2 DatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CE6BB91B440F8C00EDAAC2 /* Debug */,
+				50CE6BBA1B440F8C00EDAAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50CE6BBB1B440F8C00EDAAC2 /* Build configuration list for PBXNativeTarget "12.2 DatePickerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CE6BBC1B440F8C00EDAAC2 /* Debug */,
+				50CE6BBD1B440F8C00EDAAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50CE6B8D1B440F8C00EDAAC2 /* Project object */;
+}
